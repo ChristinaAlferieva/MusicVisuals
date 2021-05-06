@@ -1,8 +1,7 @@
 package C19401882;
 
-public class Main
-{
-
+public class Main {
+    
     public void ChristinasVisual()
     {
         String[] a = {"MAIN"};
