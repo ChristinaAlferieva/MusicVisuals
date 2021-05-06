@@ -31,25 +31,5 @@ public class ChristinasVisual extends PApplet {
         colorMode(HSB);
         lerpedBuffer = new float[width];
     }
-
-    public void keyPressed() {
-        if (keyCode >= '0' && keyCode <= '8') {
-            which = keyCode - '0';
-        }
-
-        if (keyCode == ' ') {
-            if (ap.isPLaying()) {
-                ap.pause();
-            } else {
-                ap.rewind();
-                ap.play();
-            }
-        }
-        if (keyCode == UP)
-        {
-            twoCubes = ! twoCubes;
-        }
-    }
-
     
 }
