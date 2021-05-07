@@ -178,7 +178,7 @@ public class ChristinasVisual extends PApplet {
                     
                 if (! shapes)
                 {
-                    translate(width / 2, height / 2, 0);
+                    translate(width / 2, height / 2, 50 + (lerpedAverage * 800));
                     rotateX(angle);
                     rotateY(angle);
                     
