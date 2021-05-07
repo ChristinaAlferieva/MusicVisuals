@@ -84,11 +84,12 @@ public class ChristinasVisual extends PApplet {
                 // Iterate over all the elements in the audio buffer
                 for (int i = 0; i < ab.size(); i++) {
 
-                    float c = map(i, 0, ab.size(), 0, 255);
-                    stroke(c, 255, 255);
-                    lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.1f);
+                    float c = map(i, 0, ab.size(), 0, 50);
+                    stroke(c, 255, 250);
+                    strokeWeight(2);
+                    lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.5f);
             
-                    line(i, halfHeight - lerpedBuffer[i] * halfHeight * 4, halfHeight + lerpedBuffer[i] * halfHeight * 4, i);
+                    line(i, halfHeight - lerpedBuffer[i] * halfHeight * 2, halfHeight + lerpedBuffer[i] * halfHeight * 2, i);
                 }        
                 break;
             }
