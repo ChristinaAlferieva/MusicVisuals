@@ -107,6 +107,7 @@ public class ChristinasVisual extends PApplet {
             case 2:
             {
                 background(180);
+
                 for (int i = 0; i < ab.size(); i++) {
 
                 float c = map(i, 0, ab.size(), 0, 255);
@@ -116,7 +117,23 @@ public class ChristinasVisual extends PApplet {
                 line(width, i, width - (lerpedBuffer[i] * halfHeight * 4), i);
                 line(i, 0, i, lerpedBuffer[i] * halfHeight * 4);
                 line(i, height, i, height - (lerpedBuffer[i] * halfHeight * 4));
-                }        
+                }    
+                translate(width / 2, height / 2, 50 + (lerpedAverage * 3000));
+                beginShape();
+                fill(255, 204, 0);
+                stroke(255);
+                strokeWeight(2);
+                vertex(0, -50);
+                vertex(14, -20);
+                vertex(47, -15);
+                vertex(23, 7);
+                vertex(29, 40);
+                vertex(0, 25);
+                vertex(-29, 40);
+                vertex(-23, 7);
+                vertex(-47, -15);
+                vertex(-14, -20);
+                endShape();    
                 break;
             }
             case 3:
@@ -150,27 +167,6 @@ public class ChristinasVisual extends PApplet {
                 break;
             }
             case 5:
-            {
-                float r = 1f;
-                int numPoints = 3;
-                float thetaInc = TWO_PI / (float) numPoints;
-                strokeWeight(2);                
-                float lastX = width / 2, lastY = height / 2;
-                for(int i = 0 ; i < 1000 ; i ++)
-                {
-                    float c = map(i, 0, 300, 0, 255) % 255.0f;
-                    stroke(c, 255, 255, 100);
-                    float theta = i * (thetaInc + lerpedAverage * 5);
-                    float x = width / 2 + sin(theta) * r;
-                    float y = height / 2 - cos(theta) * r;
-                    r += 0.5f + lerpedAverage;
-                    line(lastX, lastY, x, y);
-                    lastX = x;
-                    lastY = y;
-                }
-                break;
-            }
-            case 6:
             {
                 lights();
                 strokeWeight(2);
@@ -220,7 +216,31 @@ public class ChristinasVisual extends PApplet {
                     box(s);
                     popMatrix();
                 }
+                break;
+            }
+            case 6:
+            {
+                float r = 1f;
+                int numPoints = 5;
+                float thetaInc = TWO_PI / (float) numPoints;
+                strokeWeight(3);                
+                float lastX = width / 2, lastY = height / 2;
+                for(int i = 0 ; i < 1000 ; i ++)
+                {
+                    float c = map(i, 0, 300, 0, 255) % 255.0f;
+                    stroke(c, 255, 255, 100);
+                    float theta = i * (thetaInc + lerpedAverage * 5);
+                    float x = width / 2 + sin(theta) * r;
+                    float y = height / 2 - cos(theta) * r;
+                    r += 2f + lerpedAverage;
+                    line(lastX, lastY, x, y);
+                    lastX = x;
+                    lastY = y;
+                }
             }     
         }   
+    }
+
+    private void translate(double d, double e) {
     }
 }
