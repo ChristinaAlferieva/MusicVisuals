@@ -39,8 +39,10 @@ For my OOP assignment I had to create a game or a visual art piece that fits the
 # How it works
 
 
+
 # What I am most proud of in the assignment
-What I am most proud of in my assignment is the star shape in the Visual "2" and my ability to keep going and not give up. The star reacts to the music by expanding and contracting to the beat. This semester was my first time coding in Java, and after attending all lectures and labs I was able to see my coding skills improve. However, I still struggled with many things such as mapping, and getting the coordinates of shapes and objects correct. I also found it very difficult to make sure all the visuals react correctly to the music. After many different attempts to make the star sit in the center and pulse to the music, I was finally proud of what I created. I'm proud that I was able to keep going through the difficulty. Through looking back on many lectures and tutorials and wtaching different Youtube videos, I finally created the visual I had in mind for a long time. This star visual stood out to me as even after being stuck on it, through research and not giving up I got it completed. I was also very proud of the overall outcome of my program. This is the code of the star visual that I am proud of. 
+What I am most proud of in my assignment is the star shape in the Visual "2" and my ability to keep going and not give up. The star reacts to the music by expanding and contracting to the beat. This semester was my first time coding in Java, and after attending all lectures and labs I was able to see my coding skills improve. However, I still struggled with many things such as mapping, and getting the coordinates of shapes and objects correct. I also found it very difficult to make sure all the visuals react correctly to the music. After many different attempts to make the star sit in the center and pulse to the music, I was finally proud of what I created. I'm proud that I was able to keep going through the difficulty. Through looking back on many lectures and tutorials and wtaching different Youtube videos, I finally created the visual I had in mind for a long time. This star visual stood out to me as even after being stuck on it, through research and not giving up I got it completed. I was also very proud of the overall outcome of my program. 
+This is the code of the star visual that I am proud of. 
 
 ```Java
 translate(width / 2, height / 2, 50 + (lerpedAverage * 3000));
@@ -61,8 +63,8 @@ vertex(-14, -20);
 endShape(); 
 ```
 
-add pics here
-
+*Visual 0:* Iterates over all the elements in the audio buffer and forms this beautiful pattern that pulses and changes to the music.
+![An image](images/0.png)
 
 
 My Youtube link:
