@@ -15,6 +15,8 @@ public class ChristinasVisual extends PApplet {
 
     public void settings() {
         fullScreen(P3D, SPAN);  
+        cx = width / 2;
+        cy = height / 2;
     }
 
     float y = 200;
@@ -31,6 +33,9 @@ public class ChristinasVisual extends PApplet {
         colorMode(HSB);
         lerpedBuffer = new float[width];
     }
+
+    float cx;
+    float cy;
 
     public void keyPressed() {
         if (keyCode >= '0' && keyCode <= '6') {
@@ -120,19 +125,28 @@ public class ChristinasVisual extends PApplet {
                 float c = map(average, 0, 1, 0, 255);
                 stroke(c, 255, 255);        
                 strokeWeight(2);
-                fill(255, 250, 250);
-                ellipse(width / 2, height / 2, 50 + (lerpedAverage * 800), 50 + (lerpedAverage * 800));                
+                fill(255, 200, 250);
+                ellipse(width / 2, height / 2, 50 + (lerpedAverage * 800), 50 + (lerpedAverage * 800)); 
+                ellipse(width / 4, height / 2, 50 + (lerpedAverage * 800), 50 + (lerpedAverage * 800));               
+                ellipse(width * 0.75f, height / 2, 50 + (lerpedAverage * 800), 50 + (lerpedAverage * 800));
                 break;
             }
             case 4:
             {
-                float c = map(average, 0, 1, 0, 255);
-                stroke(c, 255, 255);        
+                stroke(175, 100, 220);
                 strokeWeight(2);
-                noFill();
-                rectMode(CENTER);
-                float size = 50 + (lerpedAverage * 500);
-                rect(width / 2, height / 2, size, size);
+                int lines = 8;
+                float thetaInc = TWO_PI / (float) lines; 
+                float radius = 920;
+                for(int i = 0; i < lines; i++)
+                {
+                    float theta = i * (thetaInc + lerpedAverage * 5);
+                    float angle = theta * i;
+                    float x = sin(angle) * radius;
+                    float y = cos(angle) * radius;
+                    line(cx * 38, cy * 20, cx + x, cy + y);
+
+                }
                 break;
             }
             case 5:
@@ -154,7 +168,6 @@ public class ChristinasVisual extends PApplet {
                     lastX = x;
                     lastY = y;
                 }
-                    // ??
                 break;
             }
             case 6:
@@ -164,7 +177,6 @@ public class ChristinasVisual extends PApplet {
                 float c = map(lerpedAverage, 0, 1, 0, 300);
                 stroke(c, 300, 300);
                 noFill();
-                //fill(100, 255, 255);
                 angle += 0.05f;
                 float s = 100 + (100 * lerpedAverage * 10);
                     
