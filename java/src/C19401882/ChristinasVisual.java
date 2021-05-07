@@ -50,7 +50,7 @@ public class ChristinasVisual extends PApplet {
         }
         if (keyCode == UP)
         {
-            twoCubes = ! twoCubes;
+            shapes = ! shapes;
         }
     }
     
@@ -58,7 +58,7 @@ public class ChristinasVisual extends PApplet {
     float lerpedAverage = 0;
     private float angle = 0;
 
-    private boolean twoCubes = false;
+    private boolean shapes = false;
         
     public void draw() {
         background(0);
@@ -180,12 +180,29 @@ public class ChristinasVisual extends PApplet {
                 angle += 0.05f;
                 float s = 100 + (100 * lerpedAverage * 10);
                     
-                if (! twoCubes)
+                if (! shapes)
                 {
                     translate(width / 2, height / 2, 0);
-                    rotateY(angle);
                     rotateX(angle);
-                    box(s);
+                    rotateY(angle);
+                    
+                    beginShape();
+                    vertex(-200, -200, -200);
+                    vertex(200, -200, -200);
+                    vertex(0, 0, 200);
+
+                    vertex(200, -200, -200);
+                    vertex(200, 200, -200);
+                    vertex(0, 0, 200);
+
+                    vertex(200, 200, -200);
+                    vertex(-200, 200, -200);
+                    vertex(0, 0, 200);
+
+                    vertex(-200, 200, -200);
+                    vertex(-200, -200, -200);
+                    vertex(0, 0, 200);
+                    endShape();
                 }
                 else
                 {
