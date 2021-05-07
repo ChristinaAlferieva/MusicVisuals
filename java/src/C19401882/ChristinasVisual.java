@@ -95,7 +95,6 @@ public class ChristinasVisual extends PApplet {
             }
             case 1:
             {
-                // Iterate over all the elements in the audio buffer
                 for (int i = 0; i < ab.size(); i++) {
 
                     float c = map(i, 0, ab.size(), 0, 255);

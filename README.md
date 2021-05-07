@@ -67,11 +67,38 @@ endShape();
 
 ![An image](images/0.PNG)
 
+*Visual 1:* Also iterates over all the elements in the audio buffer and shows the beat of the music along a horizontal line in the centre.
+
+![An image](images/1.PNG)
+
+*Visual 2:* This visual shows the beat of the music in little pulses all around the screen with a big black star in the centre. The star also expands and contracts to the music.
+
+![An image](images/2.PNG)
+
+*Visual 3:* As the music becomes louder and faster, in this visual three red circles on a white background pulse.
+
+![An image](images/3.PNG)
+
+*Visual 4:* In this visual there are 8 blue lines that move and interchange from one angle to the beat of the song.
+
+![An image](images/4.PNG)
+
+*Visual 5:* When key 5 is chosen there are two visuals. The first one is a 3D pyramid that rotates and pulses to the music. When the key "UP" is pressed it forms two 3D cubes also rotating and pulsing to the beat.
+
+![An image](images/5.PNG)
+
+![An image](images/5.2.PNG)
+
+*Visual 6:* This visual forms a beautiful pattern that changes and moves as the song goes on. There are many intricate patterns which form and rotate. 
+
+![An image](images/6.PNG)
+
+
 
 My Youtube link:
 - https://youtu.be/-1TtDx_KYmI
 
-[![YouTube](https://youtu.be/-1TtDx_KYmI)](https://youtu.be/-1TtDx_KYmI)
+[![YouTube](https://youtu.be/-1TtDx_KYmI/0.JPG)](https://youtu.be/-1TtDx_KYmI)
 
 
 
