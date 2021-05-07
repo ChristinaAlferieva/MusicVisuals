@@ -64,7 +64,8 @@ endShape();
 ```
 
 *Visual 0:* Iterates over all the elements in the audio buffer and forms this beautiful pattern that pulses and changes to the music.
-![An image](images/0.png)
+
+![An image](images/0.PNG)
 
 
 My Youtube link:
