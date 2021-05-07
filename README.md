@@ -71,7 +71,7 @@ endShape();
 My Youtube link:
 - https://youtu.be/-1TtDx_KYmI
 
-[![YouTube](https://youtu.be/-1TtDx_KYmI/0.jpg)](https://youtu.be/-1TtDx_KYmI)
+[![YouTube](https://youtu.be/-1TtDx_KYmI)](https://youtu.be/-1TtDx_KYmI)
 
 
 
