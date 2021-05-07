@@ -241,7 +241,4 @@ public class ChristinasVisual extends PApplet {
             }     
         }   
     }
-
-    private void translate(double d, double e) {
-    }
 }
